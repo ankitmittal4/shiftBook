@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body {
     background-color: #f6f6f6;
-    font-family: sans-serif;
+    font-family: Roboto;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     line-height: 1.4;
@@ -28,7 +29,8 @@ body {
 }
 
 .line{
-    border: 1px solid white;
+    /* height: 2px; */
+    /* border: none; */
 }
 .body{
     margin-top: 1.5rem;
@@ -39,6 +41,10 @@ body {
 .note{
     color: white;
     text-align: center;
+    font-weight: 300 ;
+}
+.italic{
+    font-style: italic;
 }
 .box{
     height: 8rem;
@@ -88,7 +94,18 @@ body {
     font-size: .8rem;
 }
 
-
-a{
-    col
+@media screen and (max-width: 550px) {
+    .container {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    .container {
+        width: 64%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .container {
+        width: 50%;
+    }
 }
