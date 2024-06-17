@@ -92,7 +92,7 @@ body {
 } */
 .inner1-box2, .inner2-box2 {
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-between !important;
     padding: 15px 20px;
     width: 100%; 
     box-sizing: border-box;
