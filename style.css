@@ -90,7 +90,7 @@ body {
     justify-content: space-between;
     padding: 0px 20px 13px 20px;
 } */
-.inner1-box2, .inner2-box2 {
+.box2 .inner1-box2, .box2 .inner2-box2 {
     display: flex !important;
     justify-content: space-between !important;
     padding: 15px 20px;
@@ -98,7 +98,7 @@ body {
     box-sizing: border-box;
 }
 
-.inner2-box2 {
+.box2 .inner2-box2 {
     padding: 0px 20px 13px 20px;
 }
 .box2-details{
