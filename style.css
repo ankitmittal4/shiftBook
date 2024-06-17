@@ -78,8 +78,9 @@ body {
     width: 80%;
     background-color:#000;
     border: 1px solid #f6f6f6;
+    box-sizing: border-box;
 }
-.inner1-box2{
+/* .inner1-box2{
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
@@ -87,6 +88,17 @@ body {
 .inner2-box2{
     display: flex;
     justify-content: space-between;
+    padding: 0px 20px 13px 20px;
+} */
+.inner1-box2, .inner2-box2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 100%; /* Ensure the flex container spans the full width */
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+.inner2-box2 {
     padding: 0px 20px 13px 20px;
 }
 .box2-details{
