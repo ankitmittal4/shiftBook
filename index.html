@@ -1,75 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ShiftBookD</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Shift Book</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="inner-container">
-
-            <div class="centered-div">
-                <div class="heading">SHIFTBOOKD</div>
-            </div>
-            <hr class="line">
-            <div class="body">
-                <p class="data">Hello {Name}</p>
-                <p class="data">Congratulations on becoming one of our influential partners. We look forward to this
-                    partnership and any other future collaborations. Our mission behind our brand is what drives us to
-                    be
-                    innovative within the creative space. Below are your credentials needed to log you into the Creative
-                    Society. Once you log in, you will have to control to create your password. Please keep this
-                    information
-                    safe and secure.</p>
-                <p class="data">The Guild will allow you to be able to tract your influence and
-                    earnings. Don't forget to add your bank account information for
-                    direct deposit. Our team will be reaching out to you soon with more
-                    details to prepare us for the official launch. 🚀</p>
-            </div>
-            <br>
-            <hr class="line">
-            <p class="note italic">Don't Forget To Reset Your Password After Login</p>
-            <hr class="line">
-
-            <br>
-
-            <div class="box1">
-                <div class="inner-box1">
-                    <span class="box1-credit">YOUR CREDENTIALS</span>
-                    <br>
-                    <span class="box1-note">Do not share with anyone</span>
-                </div>
-            </div>
-            <div class="box2">
-                <div class="inner1-box2">
-                    <span class="box2-details">Email</span>
-                    <span class="box2-details">ankit@123</span>
-                </div>
-                <div class="inner2-box2">
-                    <span class="box2-details">Password</span>
-                    <span class="box2-details">tst123</span>
-                </div>
-            </div>
-            <br>
-            <div class="centered-div">
-                <div class="heading">SHIFTBOOKD</div>
-            </div>
-            <hr class="line">
-            <br>
-            <p class="note">Get SHIFTBOOKD for customers to manage appointments</p>
-            <br>
-            <p class="note">info@shiftbookd.com</p>
-            <p class="note"><a href="" class="note">unsubscribe</a></p>
-
-
-
+        <div class="centered-div">
+            <div class="heading">SHIFTBOOKD</div>
         </div>
+        <hr class="line">
+        <br>
+        <div class="body">
+            <p class="data">Hello {{name}}</p>
+            <p class="data">Congratulations on becoming one of our influential partners. We look forward to this
+                partnership and any other future collaborations. Our mission behind our brand is what drives us to be
+                innovative within the creative space. Below are your credentials needed to log you into the Creative
+                Society. Once you log in, you will have to control to create your password. Please keep this information
+                safe and secure.</p>
+            <p class="data">The Guild will allow you to be able to track your influence and earnings. Don't forget to
+                add your bank account information for direct deposit. Our team will be reaching out to you soon with
+                more details to prepare us for the official launch. 🚀</p>
+        </div>
+        <br>
+        <hr class="line">
+        <p class="note">Don't Forget To Reset Your Password After Login</p>
+        <hr class="line">
+        <br>
+        <div class="box1">
+            <span class="box1-credit">YOUR CREDENTIALS</span><br>
+            <span class="box1-note">Do not share with anyone</span>
+        </div>
+        <div class="box2">
+            <div class="email-row">
+                <div class="left box2-details">Email</div>
+                <div class="right box2-details"><a href="#" class="email">{{text.email}}</a>
+                </div>
+            </div>
+            <div class="password-row">
+                <div class="left box2-details">Password</div>
+                <div class="right box2-details">{{text.password}}</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="centered-div">
+            <div class="heading">SHIFTBOOKD</div>
+        </div>
+        <hr class="line">
+        <br>
+        <p class="footer">Reach out to us at</p>
+        <p class="footer"><a href="#" class="email" style="color: #FFFFFF99;">info@shiftbookd.com</a></p>
+        <!-- <p class="note"><a href="#" class="note unsubscribe" style="color: #f6f6f6;">unsubscribe</a></p> -->
     </div>
-
 </body>
 
 </html>
