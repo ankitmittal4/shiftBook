@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     background-color: #000000;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .centered-div {
@@ -93,6 +94,7 @@ body {
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    box-sizing: border-box;
 }
 
 .box2 {
@@ -103,7 +105,7 @@ body {
     border: 1px solid #f6f6f6;
     margin: 0 auto;
     margin-top: 0;
-
+    /* box-sizing: border-box; */
 }
 
 .box2-details {
@@ -151,7 +153,17 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 424px) {
+    .container {
+        width: 100%;
+    }
+
+    .heading {
+        letter-spacing: 0rem;
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 424px) and (max-width: 600px) {
     .container {
         width: 100%;
     }
@@ -163,12 +175,18 @@ body {
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .container {
-        width: 64%;
+        width: 70%;
+    }
+    .heading {
+        letter-spacing: 0.1rem;
     }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1150px) {
     .container {
-        width: 50%;
+        width: 48%;
+    }
+    .heading {
+        letter-spacing: 0.2rem;
     }
 }
