@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ShiftBookD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+
+            background-color: #f6f6f6;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            /* max-width: 600px; */
+            border: 1px solid #000;
+            margin: 0 auto;
+            background-color: #000000;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .centered-div {
+            text-align: center;
+        }
+
+        .heading {
+            color: #FFFFFF;
+            font-size: 3.5em;
+            letter-spacing: .3rem;
+        }
+
+        .line {
+            border: none;
+            border-top: 2px solid #FFFFFF;
+            margin: 1rem 0;
+        }
+
+        .data {
+            color: var(--unnamed-color-ffffff);
+            text-align: left;
+            font: normal normal normal 16px/30px Roboto;
+            letter-spacing: 0.26px;
+            opacity: 1;
+            color: #FFFFFF;
+        }
+
+        .note {
+            font-weight: 300;
+            font-style: italic;
+            color: var(--unnamed-color-ffffff);
+            text-align: center;
+            font: italic normal normal 19px/48px Roboto;
+            letter-spacing: 0.46px;
+            color: #FFFFFF;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+
+        .unsubscribe {
+            color: #FFFFFF;
+        }
+
+        .box1 {
+            padding: 1rem;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 0;
+
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            border: 1px solid var(--unnamed-color-ffffff);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #FFFFFF;
+            opacity: 1;
+        }
+
+        .box1-credit {
+            color: var(--unnamed-color-000000);
+            text-align: center;
+            font: normal normal 600 16px/19px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+
+        .box1-note {
+            color: var(--unnamed-color-000000);
+            text-align: center;
+            font: italic normal normal 12px/27px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            padding: 1rem;
+            width: 80%;
+            text-align: center;
+            background-color: #000;
+            border: 1px solid #f6f6f6;
+            margin: 0 auto;
+            margin-top: 0;
+            /* box-sizing: border-box; */
+        }
+
+        .box2-details {
+            color: #FFFFFF;
+            font-size: 0.8rem;
+        }
+
+        .email-row,
+        .password-row {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+        .email-row div,
+        .password-row div {
+            display: table-cell;
+            padding: 5px 10px;
+        }
+
+        .email {
+            text-decoration: none;
+            color: #FFFFFF !important;
+        }
+
+        .left {
+            text-align: left;
+            width: 50%;
+            color: white;
+        }
+
+        .right {
+            text-align: right;
+            width: 50%;
+            color: #FFFFFF;
+        }
+
+        .footer {
+            color: #FFFFFF99;
+            text-align: center;
+            font-weight: 300;
+            font-style: italic;
+
+            font: normal normal normal 16px/25px Roboto;
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 424px) {
+            .container {
+                width: 100%;
+            }
+
+            .heading {
+                letter-spacing: 0rem;
+                font-size: 3rem;
+            }
+        }
+
+        @media screen and (min-width: 424px) and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+
+            .heading {
+                letter-spacing: 0rem;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 800px) {
+            .container {
+                width: 70%;
+            }
+
+            .heading {
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1150px) {
+            .container {
+                width: 48%;
+            }
+
+            .heading {
+                letter-spacing: 0.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="centered-div">
+            <div class="heading">SHIFTBOOKD</div>
+        </div>
+        <hr class="line">
+        <br>
+        <div class="body">
+            <p class="data">Hello {{name}}</p>
+            <p class="data">Congratulations on becoming one of our influential partners. We look forward to this
+                partnership and any other future collaborations. Our mission behind our brand is what drives us to be
+                innovative within the creative space. Below are your credentials needed to log you into the Creative
+                Society. Once you log in, you will have to control to create your password. Please keep this information
+                safe and secure.</p>
+            <p class="data">The Guild will allow you to be able to track your influence and earnings. Don't forget to
+                add your bank account information for direct deposit. Our team will be reaching out to you soon with
+                more details to prepare us for the official launch. 🚀</p>
+        </div>
+        <br>
+        <hr class="line">
+        <p class="note">Don't Forget To Reset Your Password After Login</p>
+        <hr class="line">
+        <br>
+        <div class="box1">
+            <span class="box1-credit">YOUR CREDENTIALS</span><br>
+            <span class="box1-note">Do not share with anyone</span>
+        </div>
+        <div class="box2">
+            <div class="email-row">
+                <div class="left box2-details">Email</div>
+                <div class="right box2-details"><a href="#" class="email">{{text.email}}</a>
+                </div>
+            </div>
+            <div class="password-row">
+                <div class="left box2-details">Password</div>
+                <div class="right box2-details">{{text.password}}</div>
+            </div>
+        </div>
+        <br>
+        <a href="https://dev-influencer.thecreativesociety.tech" style="text-decoration: none;">
+            <button class=''
+                style='display: block; margin-left: auto; margin-right: auto; padding: 8px 19px; border-radius: 3px; background: white; color: black; outline: none; border: none; font-weight: 500; font-size: 16px; letter-spacing: 0.02rem; cursor: pointer; letter-spacing: .5px; margin-top: 10px;'>
+                Login
+            </button>
+        </a>
+        <br>
+        <div class="centered-div">
+            <div class="heading">SHIFTBOOKD</div>
+        </div>
+        <hr class="line">
+        <br>
+        <p class="footer">Reach out to us at</p>
+        <p class="footer"><a href="#" class="email" style="color: #FFFFFF99;">info@shiftbookd.com</a></p>
+        <!-- <p class="note"><a href="#" class="note unsubscribe" style="color: #f6f6f6;">unsubscribe</a></p> -->
+    </div>
+</body>
+
+</html>
